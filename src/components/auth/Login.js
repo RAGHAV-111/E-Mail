@@ -13,7 +13,9 @@ const Login = () => {
       
          
 if(enteredEmail && enteredPassword) {
+    //FIREBSE API 
         fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCJJbj1SLwNgFIE4greHapQO5XoPsWVlBA', {
+            
             method: 'POST',
             body: JSON.stringify({
               email: enteredEmail,
